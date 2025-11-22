@@ -1,0 +1,22 @@
+alter table ruta drop constraint if exists ruta_origen_fk;
+alter table ruta drop constraint if exists ruta_destino_fk;
+alter table vuelo drop constraint if exists vuelo_ruta_fk;
+alter table reserva_pasaje drop constraint if exists reserva_vuelo_fk;
+alter table reserva_pasaje drop constraint if exists reserva_cliente_fk;
+alter table error drop constraint if exists error_ruta_fk;
+alter table error drop constraint if exists error_vuelo_fk;
+alter table error drop constraint if exists error_reserva_fk;
+alter table error drop constraint if exists error_cliente_fk;
+---alter table envio_email drop constraint if exists envio_email_cliente_fk;
+---alter table datos_de_prueba drop constraint if exists datos_de_prueba_vuelo_fk;
+---alter table datos_de_prueba drop constraint if exists datos_de_prueba_cliente_fk;
+---alter table datos_de_prueba drop constraint if exists datos_de_prueba_reserva_fk;
+
+alter table cliente drop constraint if exists cliente_pk;
+alter table aeropuerto drop constraint if exists aeropuerto_pk;
+alter table ruta drop constraint if exists ruta_pk;
+alter table vuelo drop constraint if exists vuelo_pk;
+alter table reserva_pasaje drop constraint if exists reserva_pasaje_pk;
+alter table error drop constraint if exists error_pk;
+alter table envio_email drop constraint if exists envio_email_pk;
+alter table datos_de_prueba drop constraint if exists datos_de_prueba_pk;
