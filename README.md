@@ -10,8 +10,9 @@ Profesores: Hernán Rondelli - Ximena Ebertz (COM-01)
 ---
 ### Introducción
 ---
+
 Este trabajo práctico implementa un sistema completo para gestionar vuelos, reservas, check-in y envíos de email usando PostgreSQL y una aplicación en Go. Se desarrollaron procedimientos almacenados, triggers y una capa de exportación a BoltDB para almacenar datos serializados en formato clave–valor. Además, se incluyó un menú en Go para automatizar la creación de la base, carga de datos, ejecución de pruebas y exportación hacia BoltDB.
----
+
 ## Creación de la base de datos, tablas, constraints e inserción de datos
 ---
 ### 1- Creación de la base de datos desde el menú de Go
@@ -200,7 +201,7 @@ A lo largo del desarrollo del proyecto utilizamos distintas herramientas y tecno
 Se utilizó **go** como lenguaje de programación para el desarrollo del proyecto con la librería nativa **database/sql** para el manejo de conexiones a la base de datos gestionada con **PostgreSQL** gracias a la conexión entre estas con el driver **github.com/lib/pq**. PostgreSQL nos gestionó con éxito las consultas **SQL** realizadas.  
 Se utilizo como editor de texto **geany**, **Visual Studio Code** y **nvim** y para la realización del readme sumamos **Obsidian** como gestor y editor de notas Markdown. Obsidian nos proporcionó una vista previa en tiempo real de lo que estábamos documentando. En el informe se utilizó el formato **Markdown** que nos resultó el más sencillo ya que poseíamos conocimientos previos sobre este.  
 Para la creación de tablas utilizamos SQL con PostgreSQL como base de datos y como editor se usó geany (cada integrante del grupo utilizó el editor de texto que le resulta mas cómodo para agilizar el proceso).
----
+
 ### Conclusión
 ---
 El trabajo práctico se completó satisfactoriamente, logrando implementar todos los procedimientos, triggers y mecanismos de exportación requeridos. Durante el desarrollo se adquirieron conocimientos sobre PostgreSQL, manejo de errores, triggers y serialización hacia BoltDB desde Go. Además, el sistema fue probado utilizando los *datos de prueba provistos*, obteniendo en cada caso los resultados esperados. Esto permitió validar que la solución funciona de forma correcta y acorde a lo solicitado por el enunciado.
